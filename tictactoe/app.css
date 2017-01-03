@@ -1,0 +1,27 @@
+body {
+	width: 300px;
+	margin: 0 auto;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 50px;
+}
+table {
+	border-collapse: collapse;
+}
+td{
+	width:100px;
+	height:100px;	
+	
+}
+
+.right-left{
+	border-right:1px solid black;
+	border-left:1px solid black;
+}
+
+.top-bottom{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
