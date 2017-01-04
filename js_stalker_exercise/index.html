@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS Stalker Exercise</title>
+	</head>
+	<body>
+		<div id="content">
+			
+		</div>
+	</body>
+
+	<script>
+	var first_name = prompt("What is your first name?");
+	var last_name = prompt("What is your last name?");
+	var full_name = first_name + " " + last_name;
+	var age = prompt("What is your age?");
+
+	var content = document.getElementById("content");
+	content.innerHTML = "<p>" + "Your full name is " + full_name + "</p>" + "<p>" + "Your are " + age + " years old" + "</p>";
+
+
+	</script>
+</html>
