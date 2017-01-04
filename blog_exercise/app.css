@@ -1,0 +1,53 @@
+* {
+	box-sizing:border-box;
+}
+html{
+	font-size: 10px;
+}
+
+html,body{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "Source Sans Pro", sans-serif;
+	max-width: 760px;
+	/*width:96rem;*/
+	width:80%;
+	border: 20px solid #bdc3c7;
+	margin: 50px auto 0 auto;
+	padding:20px;
+}
+
+h2{
+	font-size: 2.8rem;
+	font-weight: 900;
+	color: #2c3e50;
+}
+
+p{
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+
+section {
+	margin-bottom: 20px;
+}
+
+.date {
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: #3498db;
+}
+
+.lead {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+hr {
+	border:0;
+	height:1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
+}
