@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS Todo List Array</title>
+	</head>
+	<body>
+		<h1>Todo List</h1>
+
+		<ul>
+			<li>"new" - Add A Todo</li>
+			<li>"list" - List all Todos</li>
+			<li>"quit" - Quit App</li>
+		</ul>
+	</body>
+
+	<script>
+		var todos = ["Buy New Turtle"];
+
+		var input = prompt("What would you like to do?");
+
+		while(input !== "quit") {
+			if(input === "list") {
+				console.log(todos);
+			}else if (input === "new") {
+				var newTodo = prompt("Enter new todo");
+				todos.push(newTodo);
+			}
+
+			input = prompt("What would you like to do?");
+		}
+
+		console.log("OK, you quit the app");
+	
+
+
+	</script>
+</html>
