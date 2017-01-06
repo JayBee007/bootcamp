@@ -20,10 +20,21 @@
 
 		while(input !== "quit") {
 			if(input === "list") {
-				console.log(todos);
+				console.log("**********");
+				todos.forEach(function(todo, index){
+					console.log(index + ": " +todo);
+				});
+			console.log("**********");
+				
 			}else if (input === "new") {
 				var newTodo = prompt("Enter new todo");
 				todos.push(newTodo);
+				console.log("added todo");
+			}else if (input === "delete") {
+				var index = prompt("Please give the index to delte");
+				//splice();
+				todos.splice(index,1);
+				console.log("delted todo");
 			}
 
 			input = prompt("What would you like to do?");
