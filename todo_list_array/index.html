@@ -20,27 +20,40 @@
 
 		while(input !== "quit") {
 			if(input === "list") {
-				console.log("**********");
-				todos.forEach(function(todo, index){
-					console.log(index + ": " +todo);
-				});
-			console.log("**********");
 				
+				listTodos();
+
 			}else if (input === "new") {
-				var newTodo = prompt("Enter new todo");
-				todos.push(newTodo);
-				console.log("added todo");
+				addTodo();
 			}else if (input === "delete") {
-				var index = prompt("Please give the index to delte");
-				//splice();
-				todos.splice(index,1);
-				console.log("delted todo");
+				deleteTodo();
 			}
 
 			input = prompt("What would you like to do?");
 		}
 
 		console.log("OK, you quit the app");
+
+		function listTodos() {
+			console.log("**********");
+				todos.forEach(function(todo, index){
+					console.log(index + ": " +todo);
+				});
+				console.log("**********");
+		}
+
+		function addTodo() {
+			var newTodo = prompt("Enter new todo");
+				todos.push(newTodo);
+				console.log("added todo");
+		}
+
+		function deleteTodo() {
+			var index = prompt("Please give the index to delte");
+				//splice();
+				todos.splice(index,1);
+				console.log("delted todo");
+		}
 	
 
 
