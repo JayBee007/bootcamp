@@ -10,8 +10,6 @@ body{
 	font-family: "Open Sans";
 	font-size: 16px;
 	padding-top: 70px; 
-	/*background: linear-gradient(rgba(0,255,0,0.45),rgba(0,255,0,0.45)) ; */
-	
 	background: linear-gradient(rgba(0,160,0,0.45),rgba(0,255,0,0.45)), url(http://media.dcentertainment.com/sites/default/files/GalleryComics_1900x900_20140205_BM_BLKWHT_Cv6_52cf3157d7d184.17703957.jpg);
 	background-repeat: none;
 	background-position: center center;
@@ -70,4 +68,8 @@ input{
 
 input:hover,input:focus{
 	background-color: rgba(0,255,0,.40);
+}
+
+.winner{
+	color:yellow;
 }
