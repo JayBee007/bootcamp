@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width:100%;
+}
+
+body{
+	font-family: "Open Sans";
+	font-size: 16px;
+	padding-top: 70px; 
+	/*background: linear-gradient(rgba(0,255,0,0.45),rgba(0,255,0,0.45)) ; */
+	
+	background: linear-gradient(rgba(0,160,0,0.45),rgba(0,255,0,0.45)), url(http://media.dcentertainment.com/sites/default/files/GalleryComics_1900x900_20140205_BM_BLKWHT_Cv6_52cf3157d7d184.17703957.jpg);
+	background-repeat: none;
+	background-position: center center;
+	background-clip: cover;
+	color:white;
+}
+
+.container {
+	width: 300px;
+	margin:0 auto;
+	/*background-color: white;*/
+	text-align: center;
+}
+
+h1{
+	font-size: 5.5rem;
+	
+}
+
+p{
+	font-size: 2.5rem;
+}
+
+button{
+	width:100%;
+	padding:10px 20px;
+	margin-bottom: 10px;
+	border:5px solid yellow;
+	color:white;
+	font-size: 1.5rem;
+	background-color: rgba(0,255,0,.90);
+	border-radius:10px;	
+	outline: none;
+}
+
+button:hover{
+	background-color: rgba(0,255,0,.40);
+}
+
+
+
+
+input{
+	width:100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding:10px 20px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	background-color: rgba(0,255,0,.90);
+	border: none;
+	border:1px solid yellow;
+	color:white;
+	outline:none;
+}
+
+input:hover,input:focus{
+	background-color: rgba(0,255,0,.40);
+}
