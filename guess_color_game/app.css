@@ -51,8 +51,12 @@ ul.nav a {
 	color:white;
 }
 
-.result{
-	opacity:0;
+.result-hide{
+	opacity: 0;
+}
+
+.result-show{
+	opacity: 1;
 }
 
 
