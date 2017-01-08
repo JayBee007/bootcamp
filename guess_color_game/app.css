@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-	min-width: 300px;
+	max-width: 600px;
 	margin:0 auto;
 }
 
@@ -57,6 +57,21 @@ ul.nav a {
 
 .result-show{
 	opacity: 1;
+}
+
+p{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.6rem;
+}
+
+.square{
+	width:30%;
+	background-color: white;
+	padding-bottom: 30%;
+	float:left;
+	margin:1.66%;
 }
 
 
