@@ -1,11 +1,57 @@
-var square = document.getElementsByClassName("square");
-var colors = getRandomColors(6);
-var displayColor = document.getElementById("displayColor");
+var numSquares = 6;
 var result = document.getElementById("result");
+var resetButton = document.getElementById("newGame");
+var square = document.getElementsByClassName("square");
+var colors = getRandomColors(numSquares);
+var displayColor = document.getElementById("displayColor");
+var easyGame = document.getElementById("easyGame");
+var hardGame = document.getElementById("hardGame");
 var h1 = document.querySelector("h1"); 
 var selectedColor = pickColor();
 
+
+easyGame.addEventListener("click",function(){
+	numSquares = 3;
+	this.classList.add("gameMode");
+	hardGame.classList.remove("gameMode");
+	colors = getRandomColors(numSquares);
+	selectedColor = pickColor();
+	for(var i = 0; i<square.length;i++){
+		if(colors[i]){
+			square[i].style.background = colors[i];
+		}else {
+			square[i].style.display = "none";	
+		}
+	}
+});
+
+hardGame.addEventListener("click",function(){
+	numSquares = 6;
+	this.classList.add("gameMode");
+	easyGame.classList.remove("gameMode");
+	colors = getRandomColors(numSquares);
+	selectedColor = pickColor();
+	for(var i = 0; i<square.length;i++){
+		square[i].style.background = colors[i];
+		square[i].style.display = "block";	
+	}
+});
+
+
 displayColor.textContent = selectedColor;
+
+resetButton.addEventListener("click", function(){
+	resetButton.textContent = "New Game";
+	h1.style.background = "steelblue";
+	colors = getRandomColors(numSquares);
+	selectedColor = pickColor();
+	displayColor.textContent = selectedColor;
+	result.classList.add("result-hide");
+	result.classList.remove("result-show");
+	for(var i = 0; i<square.length; i++){
+	square[i].style.background = colors[i];
+	}
+});
 
 
 
@@ -15,6 +61,7 @@ for(var i = 0; i<square.length; i++){
 		var clickedColor = this.style.background;
 		if(clickedColor === selectedColor){
 			result.textContent = "Correct!!";
+			resetButton.textContent = "Play Again?";
 			result.classList.remove("result-hide");
 			result.classList.add("result-show");
 			changeColors(clickedColor);

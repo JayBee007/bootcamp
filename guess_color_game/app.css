@@ -26,6 +26,7 @@ h1{
 	font-size: 2.0rem;
 	line-height: 1.6;
 	font-weight: normal;
+	transition: background .5s;
 }
 
 #displayColor{
@@ -49,6 +50,11 @@ ul.nav a {
 	text-decoration: none;
 	font-size: 1.6rem;
 
+}
+
+ul.nav a:hover{
+	color:black;
+	background-color: steelblue;
 }
 
 .gameMode{
@@ -77,6 +83,8 @@ p{
 	padding-bottom: 30%;
 	float:left;
 	margin:1.66%;
+	border-radius: 15px;
+	transition: background .5s;
 }
 
 
