@@ -4,39 +4,25 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Guess The Color Game</title>
-		<link rel="stylesheet" href="app.css">
-		
+		<title>jQuery Selector Exercise</title>
+				
 
 	</head>
 	<body>
-		<header>
-				<h1>The Greatest<br><span id="displayColor">RGB(255,255,255) </span><br>Color Guessing Game</h1>		
-		</header>
-			
-		<nav>
-			<ul class="nav">
-				<li><a id="newGame" href="#">New Game</a></li>				
-				<li><a id="easyGame" href="#">Easy</a></li>
-				<li><a id="hardGame" class="gameMode" href="#">Hard</a></li>
-			</ul>			
-		</nav>
+		
+			<div>Div 1</div>
+			<div class="highlight">Div 2</div>
+			<div id="third">Div 3</div>
+			<div class="highlight">Div 4</div>
 
-		<p id="result" class="result-hide">Result</p>
-
-
-		<div class="container">
-			
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-						
-		</div>
-
-		<script src="script.js"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+		$("div").css("backgroundColor", "purple");
+		$("div.highlight").css("width", "200px");
+		$("div#orange").css("border", "1px solid orange");
+		$("div:first-of-type").css("color","pink");
+		</script>
 	</body>
 
 </html>
