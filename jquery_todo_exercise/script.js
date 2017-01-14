@@ -14,6 +14,10 @@ $("ul").on("click","li",function(){
   		var task = $(this).val();
   		$(this).val("");
   		$("ul").append("<li><span><i class='fa fa-trash'></i></span>"+" "+task+"</li>");
-
   	}
   });
+
+  $(".fa-sticky-note-o").click(function(){
+	$("input[type='text'").fadeToggle()
+});
+
