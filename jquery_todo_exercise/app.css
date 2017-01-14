@@ -12,10 +12,16 @@ body{
 	font-family: "Quicksand", sans-serif;
 }
 
+#container {
+	width:320px;
+	margin: 100px auto;
+	background-color: #f7f7f7;
+}
+
 h1{
 	margin:0;
-	padding:10px 10 10px 20px;
-	font-size: 2.2em;
+	padding:10px 10px 10px 20px;
+	font-size: 2.4rem;
 	position: relative;
 	background-color: steelblue;
 	color:white;
@@ -24,7 +30,7 @@ h1{
 
 h1 i {
 	float: right;
-	transition: font-size .2s;
+	transition: all .1s;
 }
 
 h1 i:hover{
@@ -44,11 +50,7 @@ input[type=text]:focus {
 	border: 2px solid steelblue;
 }
 
-#container {
-	width:320px;
-	margin: 100px auto;
-	background-color: #f7f7f7;
-}
+
 
 ul{
 	list-style: none;
@@ -63,7 +65,7 @@ ul li {
 	height: 40px;
 	font-size: 1.6rem;
 	font-weight: bold;
-	/*line-height: 40px;*/
+	line-height: 40px;
 	color:#666;
 }
 
@@ -76,17 +78,28 @@ ul li:hover{
 	color:white;
 }
 
+.completed{
+	text-decoration: line-through;
+} 
+
 span{
 	background-color: #e73c3c;
 	height:40px;
 	margin-right: 20px;
 	text-align: center;
 	color:white;
-	width:40px;
+	width:0;
 	display: inline-block;
+	opacity:0;
+	transition:width .3s;
+	cursor: pointer;
 	
 }
 
+ul li:hover span{
+	opacity: 1;
+	width:40px;
+}
 
 
 
